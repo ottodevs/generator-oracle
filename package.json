@@ -1,0 +1,48 @@
+{
+  "name": "generator-oracle",
+  "version": "1.0.0",
+  "description": "Yeoman generator for creating blockchain oracles",
+  "keywords": [
+    "yeoman-generator",
+    "babel",
+    "project",
+    "gulp",
+    "blockchain",
+    "ethereum"
+  ],
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-standard": "^8.0.2",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^1.2.2",
+    "standard": "*"
+  },
+  "standard": {
+    "ignore": [
+      "/generator/**",
+    ]
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A92hm/generator-oracle.git"
+  },
+  "author": "Ali Hajimirza <ali@alihm.net>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/A92hm/generator-oracle/issues"
+  },
+  "homepage": "https://github.com/A92hm/generator-oracle#readme"
+}

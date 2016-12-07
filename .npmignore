@@ -1,0 +1,11 @@
+# Folders
+./src
+./.git
+
+# Files
+./.babelrc
+./.editorconfig
+./.gitignore
+./.gulpfile.js
+./.DS_Store
+./.travis.yml
