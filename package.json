@@ -10,11 +10,11 @@
     "blockchain",
     "ethereum"
   ],
-  "main": "gulpfile.js",
+  "main": "generators/app/index.js",
   "dependencies": {
+    "yeoman-generator": "^0.24.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.19.0",
     "babel-preset-es2015": "^6.18.0",
     "del": "^2.2.2",
@@ -30,11 +30,10 @@
   },
   "standard": {
     "ignore": [
-      "/generator/**",
+      "/generators/**"
     ]
   },
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/A92hm/generator-oracle.git"
