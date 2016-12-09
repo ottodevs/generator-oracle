@@ -6,8 +6,8 @@ const nodemon = require('gulp-nodemon')
 const plumber = require('gulp-plumber')
 const standard = require('gulp-standard')
 
-const jsSources = ['lib/**/*.js', 'gulpfile.js']
-const localEnvFile = './lib/config/dev.env.js'
+const jsSources = ['app/**/*.js', 'gulpfile.js']
+const localEnvFile = './app/config/dev.env.js'
 
 gulp.task('standard', () => {
   return gulp.src(jsSources)

@@ -40,4 +40,4 @@ jspm_packages
 .DS_Store
 
 # Env file
-.dev.env.js
+dev.env.js
