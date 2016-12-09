@@ -1,6 +1,7 @@
 import { Base } from 'yeoman-generator'
+import path from 'path'
 
-export class Generator extends Base {
+class Generator extends Base {
   constructor (...args) {
     super(...args)
 
@@ -19,34 +20,26 @@ export class Generator extends Base {
 
   get initializing () {
     return {
-      init () {
-        console.log(`The name is:`)
-      }
     }
   }
 
   get prompting () {
     return {
+      directoryName () {
+
+      },
+
+      appName () {
+
+      }
     }
   }
 
   get configuring () {
-    function init () {
-      console.log('init')
-    }
-
-    function dothings () {
-      console.log('init')
-    }
-
-    function finish () {
-      console.log('init')
-    }
-
     return {
-      init,
-      dothings,
-      finish
+      init () {
+        this.sourceRoot(path.join(__dirname, '../../templates/app'))
+      }
     }
   }
 
@@ -59,11 +52,19 @@ export class Generator extends Base {
   }
 
   get writing () {
-    return {}
+    return {
+      copyAll () {
+        this.bulkDirectory('.', '.')
+      }
+    }
   }
 
   get install () {
-    return {}
+    return {
+      install () {
+        this.npmInstall()
+      }
+    }
   }
 
   get end () {
