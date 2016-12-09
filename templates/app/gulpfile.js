@@ -30,7 +30,7 @@ gulp.task('setEnv', () => {
 
 gulp.task('develop', () => {
   nodemon({
-    script: 'lib/app.js',
+    script: 'index.js',
     stdout: true,
     stderr: true
   })
