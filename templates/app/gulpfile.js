@@ -1,6 +1,7 @@
 'use strict'
 
 const gulp = require('gulp')
+const chalk = require('chalk')
 const env = require('gulp-env')
 const nodemon = require('gulp-nodemon')
 const plumber = require('gulp-plumber')
@@ -24,7 +25,7 @@ gulp.task('setEnv', () => {
   try {
     env({file: localEnvFile})
   } catch (err) {
-    console.warn('No local environment file was found')
+    console.warn(chalk.black.bgYellow('No local environment file was found'))
   }
 })
 
