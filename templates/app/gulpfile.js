@@ -37,6 +37,8 @@ gulp.task('develop', () => {
   })
 })
 
+gulp.task('test', [])
+
 gulp.task('watch', () => {
   return gulp.watch(jsSources, ['standard'])
 })
