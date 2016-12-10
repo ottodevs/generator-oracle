@@ -1,0 +1,18 @@
+sudo: false
+language: node_js
+
+node_js:
+  - 4
+  - 6
+  - node
+
+before_install:
+  - npm install -g gulp-cli
+  - npm install
+
+script:
+  - gulp build
+
+cache:
+  directories:
+    - node_modules
